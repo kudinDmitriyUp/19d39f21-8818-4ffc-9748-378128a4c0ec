@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
@@ -9,7 +9,7 @@ import TestimonialCardOne from '@/components/sections/testimonial/TestimonialCar
 import FaqBase from '@/components/sections/faq/FaqBase';
 import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
 import FooterSocial from '@/components/sections/footer/FooterSocial';
-import { Sparkles, Zap, Shirt, Pocket, Leaf, Users, Award, Globe, TrendingUp, Star, HelpCircle, Instagram, Facebook, Twitter, Pinterest } from 'lucide-react';
+import { Sparkles, Zap, Shirt, Pocket, Leaf, Users, Award, Globe, TrendingUp, Star, HelpCircle, Instagram, Facebook, Twitter } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -28,7 +28,6 @@ export default function LandingPage() {
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingOverlay
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32T51L3BHE8qqE8rXXWBwMZaYtk/uploaded-1763757122798-pef0pfex.jpg"
-          logoAlt="Clothing Brand Logo"
           brandName="Stellar Threads"
           navItems={[
             { name: "Shop", id: "shop" },
@@ -295,8 +294,7 @@ export default function LandingPage() {
           socialLinks={[
             { icon: Instagram, href: "https://instagram.com", ariaLabel: "Follow us on Instagram" },
             { icon: Facebook, href: "https://facebook.com", ariaLabel: "Follow us on Facebook" },
-            { icon: Twitter, href: "https://twitter.com", ariaLabel: "Follow us on Twitter" },
-            { icon: Pinterest, href: "https://pinterest.com", ariaLabel: "Follow us on Pinterest" }
+            { icon: Twitter, href: "https://twitter.com", ariaLabel: "Follow us on Twitter" }
           ]}
           copyrightText="© Stellar Threads, Inc. 2025. All rights reserved."
           containerClassName="border-t border-opacity-10"
